@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Note Pad App</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+  <div class="header" id="myHeader">
+    <input id="userInput" type="text" placeholder="Enter a task here..">
+    <span onclick="newItem()" id="add" class="addBtn"></span> <!-- adding a button -->
+  </div>
+  <div class="toDo">
+    <ul id="userList">
+      <!--
+      <li>Brocolli</li>
+      <li class="checked">Ice Cream</li>
+      <li>A Boat</li>
+    -->
+    </ul>
+  </div>
+  <!-- JavaScripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
