@@ -29,6 +29,12 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
+// Lets create a function that adds each item into an array
+// function itemList() {
+//   let ingredientList = getElementsByTagName('li');
+//   console.log(ingredientList);
+// }
+
 // Add check when a list item is clicked
 var list = document.querySelector('ul');
 list.addEventListener('click', function(doneToggle) {
@@ -37,10 +43,17 @@ list.addEventListener('click', function(doneToggle) {
   }
 }, false);
 
+// Set up array to add an user inputs to - we will query this later for filtering
+const itemArray = [];
+
 // Add item to list when add button is clicked
 function newItem() {
   var li = document.createElement('LI');
   var inputValue = document.getElementById('userInput').value;
+  // push user inputs to the array each time user clicks submit
+  itemArray.push(inputValue);
+  console.log(itemArray);
+
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
