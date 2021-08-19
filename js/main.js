@@ -81,7 +81,8 @@ function newItem() {
   // Telling the new list items the remove button has a function
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
-      var div = this.parentElement;
+      // remove the item from the array when delete button is clicked
+      var div = this.parentElement; 
       div.style.display = "none";
     }
   }

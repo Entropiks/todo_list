@@ -1,7 +1,3 @@
-fetch("www.themealdb.com/api/json/v1/1/random.php", {
-}).then(response => {
-	console.log(response);
-  return response.recipe();
-}).then(recipe => {
-  console.log(recipe);
-})
+const APP_ID = "2ad5fa73";
+const APP_KEY = "44f9e3a2bf0daa3347c759a70c1cef76	";
+const url = "";
